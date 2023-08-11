@@ -12,8 +12,6 @@ function ProfilePage() {
       <div className="flex flex-col items-center bg-white rounded-md p-8 shadow-md mt-5">
         <h1 className="text-5xl mt-4 mb-4">Profile</h1>
         <div className="text-center">
-          <h2 className="font-bold">{`ID: ${session?.user?._id}`}</h2>
-          <p className="text-gray-500">{session?.user?.fullname}</p>
           <p className="text-gray-500">{session?.user?.email}</p>
           <p className="text-green-500">{status}</p>
         </div>
@@ -31,5 +29,6 @@ function ProfilePage() {
 }
 
 export default ProfilePage;
+
 
 
